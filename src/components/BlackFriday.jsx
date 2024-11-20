@@ -1,4 +1,5 @@
 import React from "react";
+import exemploImg from "../img/exemplo.jpg"; // Importando a imagem para garantir compatibilidade no bundler
 
 const BlackFriday = () => (
   <section id="black-friday" className="py-5 bg-dark text-light">
@@ -20,11 +21,11 @@ const BlackFriday = () => (
       {/* Imagem com Legenda */}
       <figure className="text-center">
         <img
-          src="/src/img/exemplo.jpg"
+          src={exemploImg}
           alt="Black Friday"
           className="img-fluid rounded"
         />
-        <figcaption className="mt-2 ">
+        <figcaption className="mt-2">
           Planta do Matiz Cambuci atendida para fins ilustrativos.
         </figcaption>
       </figure>
@@ -75,7 +76,7 @@ const BlackFriday = () => (
 
       {/* Botão de Chamada para Ação */}
       <div className="mt-5">
-        <a href="https://wa.me/11930092923"  className="btn btn-warning btn-lg shadow-lg px-5">
+        <a href="https://wa.me/11930092923" className="btn btn-warning btn-lg shadow-lg px-5">
           Aproveitar Oferta
         </a>
       </div>

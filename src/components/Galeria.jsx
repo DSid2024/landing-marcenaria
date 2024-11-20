@@ -1,4 +1,7 @@
 import React from 'react';
+import c1 from '../img/c1.webp';
+import c2 from '../img/c2.webp';
+import c3 from '../img/c3.jpg';
 
 const Galeria = () => (
   <section id="galeria" className="py-5 bg-light">
@@ -9,9 +12,7 @@ const Galeria = () => (
         className="carousel slide"
         data-bs-ride="carousel"
         style={{
-          maxWidth: '800px', // Largura máxima do carrossel
-          maxHeight: '450px', // Altura máxima do carrossel
-          overflow: 'hidden', // Ocultar partes excedentes
+          maxWidth: '800px',
           margin: '0 auto', // Centralizar o carrossel
         }}
       >
@@ -43,22 +44,22 @@ const Galeria = () => (
         <div className="carousel-inner">
           <div className="carousel-item active">
             <img
-              src="/src/img/c1.webp"
+              src={c1}
               className="d-block w-100"
               alt="Trabalho 1"
               style={{
-                objectFit: 'cover', // Ajusta a imagem para preencher o espaço sem distorção
-                height: '450px', // Mesma altura do carrossel
+                objectFit: 'cover',
+                height: '450px',
               }}
             />
-            <div className="carousel-caption d-none d-md-block bg-black rounded-4 opacity-50">
+            <div className="carousel-caption d-none d-md-block bg-black rounded-4 opacity-50 p-2">
               <h5>Quarto</h5>
               <p>Projeto incrível em louro freijó e cronos, contemplando escrivaninha e painel</p>
             </div>
           </div>
           <div className="carousel-item">
             <img
-              src="/src/img/c2.webp"
+              src={c2}
               className="d-block w-100"
               alt="Trabalho 2"
               style={{
@@ -66,14 +67,14 @@ const Galeria = () => (
                 height: '450px',
               }}
             />
-            <div className="carousel-caption d-none d-md-block bg-black rounded-4 opacity-50">
+            <div className="carousel-caption d-none d-md-block bg-black rounded-4 opacity-50 p-2">
               <h5>Lavanderia Completa</h5>
               <p>Armários em louro freijó e branco, aproveitando todo o espaço</p>
             </div>
           </div>
           <div className="carousel-item">
             <img
-              src="/src/img/c3.jpg"
+              src={c3}
               className="d-block w-100"
               alt="Trabalho 3"
               style={{
@@ -81,8 +82,8 @@ const Galeria = () => (
                 height: '450px',
               }}
             />
-            <div className="carousel-caption d-none d-md-block bg-black rounded-4 opacity-50">
-              <h5>Cozinha </h5>
+            <div className="carousel-caption d-none d-md-block bg-black rounded-4 opacity-50 p-2">
+              <h5>Cozinha</h5>
               <p>Moderno projeto em branco e louro freijó, com armários e painel amadeirado para o balcão</p>
             </div>
           </div>
