@@ -1,0 +1,102 @@
+/* Corrigir problema de rolagem horizontal global */
+body {
+  margin: 0; /* Remove margens padrão do body */
+  padding: 0; /* Remove padding padrão */
+  width: 100%; /* Garante que o body ocupe toda a largura */
+  overflow-x: hidden; /* Impede rolagem horizontal desnecessária */
+}
+
+/* Estilização do componente Sobre */
+/* Ícones */
+.icon {
+  font-size: 2.5rem;
+}
+
+/* Zoom-In Animation */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Estilo padrão dos cards */
+.card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animação ao entrar na viewport */
+.animate-card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilização do componente BlackFriday*/
+#black-friday {
+  background: linear-gradient(45deg, #343a40, #212529);
+  color: #f8f9fa;
+}
+
+#black-friday ul {
+  padding: 0;
+}
+
+#black-friday .list-group-item {
+  font-size: 1.1rem;
+}
+
+#black-friday a.btn {
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0px 4px 15px rgba(255, 193, 7, 0.5);
+  transition: transform 0.2s ease-in-out;
+}
+
+#black-friday a.btn:hover {
+  transform: scale(1.05);
+}
+
+.offer-box {
+  background: linear-gradient(45deg, #555, #444);
+  border: 1px solid #666;
+  border-radius: 10px;
+}
+
+.offer-box h3 {
+  color: #ffcc00;
+}
+
+.offer-box p {
+  margin: 0;
+}
+
+#black-friday .btn {
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(255, 193, 7, 0.5);
+}
+
+#black-friday .btn:hover {
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+#black-friday .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente o conteúdo */
+  align-items: center; /* Centraliza horizontalmente o conteúdo */
+  height: 100%; /* Garante que o card ocupe toda a altura disponível */
+  border-radius: 8px; /* Deixa as bordas arredondadas */
+}
